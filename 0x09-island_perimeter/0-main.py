@@ -1,10 +1,15 @@
 #!/usr/bin/python3
 """
-Main file for testing
+0-main
 """
+island_perimeter = __import__('0-island_perimeter').island_perimeter
 
-makeChange = __import__('0-making_change').makeChange
-
-print(makeChange([1, 2, 25], 37))
-
-print(makeChange([1256, 54, 48, 16, 102], 1453))
+if __name__ == "__main__":
+    grid = [
+        [0, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 1, 1, 1, 0, 0],
+        [0, 0, 0, 0, 0, 0]
+    ]
+    print(island_perimeter(grid))
